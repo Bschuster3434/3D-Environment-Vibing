@@ -1,0 +1,127 @@
+.material-selector-hud {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  pointer-events: auto;
+}
+
+.material-selector-overlay {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  min-width: 220px;
+  max-width: 280px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  pointer-events: auto;
+}
+
+.material-selector-overlay .selector-header {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.material-selector-overlay .selector-header h3 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.material-selector-overlay .hint {
+  margin: 0;
+  font-size: 11px;
+  color: #aaa;
+}
+
+.material-selector-overlay .material-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  padding: 3px;
+}
+
+.material-selector-overlay .material-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: white;
+}
+
+.material-selector-overlay .material-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.material-selector-overlay .material-button:active {
+  transform: translateY(0);
+}
+
+.material-selector-overlay .material-swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.material-selector-overlay .material-name {
+  font-size: 9px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Scrollbar styling */
+.material-selector-overlay .material-grid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.material-selector-overlay .material-grid::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.material-selector-overlay .material-grid::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.material-selector-overlay .material-grid::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Done button */
+.material-selector-overlay .done-button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  background: rgba(70, 130, 180, 0.9);
+  border: 2px solid rgba(100, 160, 210, 0.8);
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.material-selector-overlay .done-button:hover {
+  background: rgba(90, 150, 200, 1);
+  border-color: rgba(120, 180, 230, 1);
+  transform: translateY(-1px);
+}
+
+.material-selector-overlay .done-button:active {
+  transform: translateY(0);
+}
