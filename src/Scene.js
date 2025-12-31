@@ -148,7 +148,7 @@ function Scene() {
     <div className="scene-container">
       <Canvas
         camera={{
-          position: [0, 1.6, -2],
+          position: [0, 1.6, -1.5],
           rotation: [0, 0, 0],
           fov: 75
         }}
